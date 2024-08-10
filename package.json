@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon app.js",
-    "start:prod": "node app.js"
+    "start:prod": "node init/index"
   },
   "keywords": [],
   "author": "",
