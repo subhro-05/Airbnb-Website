@@ -8,6 +8,18 @@ const listingController = require("../controllers/listings.js");
 const multer  = require('multer')
 const { storage } = require("../cloudConfig.js");
 const upload = multer({ storage });
+// const storage = multer.diskStorage({
+//     destination: function (req, file, cb) {
+//       cb(null, "uploads"); // Set the destination folder
+//     },
+//     filename: function (req, file, cb) {
+//       const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E5)
+//       cb(null, uniqueSuffix + "-" + file.originalname);
+//     },
+//   });
+  
+  // const upload = multer({ storage });
+
 // const { index, new } = require("../controllers/listings.js");
 // const {listingSchema } = require("../schema.js");
 // const ExpressError = require("../utils/expressError.js");
